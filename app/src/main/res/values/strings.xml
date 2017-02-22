@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Montenegro Turístico</string>
+    <string name="titulo">Montenegro</string>
+    <string name="username">Nombre de usuario</string>
+    <string name="password">Contraseña</string>
+    <string name="iniciarSes">Iniciar Sesión</string>
+    <string name="registrarse">Registrarse</string>
+    <string name="reppassword">Repetir contraseña</string>
+    <string name="correo">Correo electrónico</string>
+    <string name="cancelar">Cancelar</string>
+</resources>
