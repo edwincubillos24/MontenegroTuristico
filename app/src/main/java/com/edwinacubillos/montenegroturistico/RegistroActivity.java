@@ -44,12 +44,24 @@ public class RegistroActivity extends AppCompatActivity {
         bRegistrarse.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                //Comunicacion en una direcciòn
+            /*    Intent intent = new Intent(RegistroActivity.this, LoginActivity.class);
+                intent.putExtra("username", eRUsuario.getText().toString());
+                intent.putExtra("contrasena", eRPassword.getText().toString());
+                intent.putExtra("correo",eCorreo.getText().toString());
+                startActivity(intent);*/
+
+                //Validar que todos los campos esten llenos
+                //Validar que las dos contraseñas sean iguales
                 Intent intent = new Intent();
                 intent.putExtra("username", eRUsuario.getText().toString());
                 intent.putExtra("password", eRPassword.getText().toString());
                 intent.putExtra("correo",eCorreo.getText().toString());
                 setResult(RESULT_OK,intent);
                 finish();
+
+                //en caso contrario
+                //se debe mostrar mensajes o notificaciones tipo TOAST
             }
         });
 

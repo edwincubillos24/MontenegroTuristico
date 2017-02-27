@@ -5,20 +5,24 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+public class PerfilActivity extends AppCompatActivity {
 
-    String username, correo;
-    Intent intent;
+    TextView tUsername;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_perfil);
 
-        Bundle extras = getIntent().getExtras();
-        username = extras.getString("username");
-        correo = extras.getString("correo");
+        tUsername = (TextView) findViewById(R.id.tUsename);
+
+        Bundle extras= getIntent().getExtras();
+        tUsername.setText(extras.getString("username"));
+
+
+
     }
 
     @Override
@@ -33,13 +37,13 @@ public class MainActivity extends AppCompatActivity {
 
         switch (id) {
             case R.id.mPerfil:
-                intent = new Intent(MainActivity.this, PerfilActivity.class);
+            /*    intent = new Intent(MainActivity.this, PerfilActivity.class);
                 intent.putExtra("username",username);
                 intent.putExtra("correo",correo);
-                startActivity(intent);
+                startActivity(intent);*/
                 break;
             case R.id.mLogOut:
-                intent = new Intent(MainActivity.this, LoginActivity.class);
+                Intent intent = new Intent(PerfilActivity.this, LoginActivity.class);
                 startActivity(intent);
                 finish();
                 break;

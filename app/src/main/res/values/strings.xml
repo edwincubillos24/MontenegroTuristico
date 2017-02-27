@@ -8,4 +8,6 @@
     <string name="reppassword">Repetir contraseña</string>
     <string name="correo">Correo electrónico</string>
     <string name="cancelar">Cancelar</string>
+    <string name="miPerfil">Mi Perfil</string>
+    <string name="cerrarSesion">Cerrar Sesión</string>
 </resources>
