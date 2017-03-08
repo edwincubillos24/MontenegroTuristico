@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Montenegro Turístico</string>
+    <string name="titulo">Montenegro</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="iniciarSes">Login</string>
+    <string name="registrarse">Sign Up</string>
+    <string name="reppassword">Retype Password</string>
+    <string name="correo">Email</string>
+    <string name="cancelar">Cancel</string>
+    <string name="miPerfil">Profile</string>
+    <string name="cerrarSesion">Log Out</string>
+
+</resources>
